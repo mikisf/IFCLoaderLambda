@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import IFCLoader from "web-ifc-three/IFCLoader.js";
 import fs from 'fs'
 
-fs.readFile('src//example.ifc', 'utf8', (err, data) => {
+fs.readFile('example.ifc', 'utf8', (err, data) => {
     const ifcLoader = new IFCLoader();
     ifcLoader.load(data, function (model) {
         //console.log(model.castShadow)
