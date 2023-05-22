@@ -1,5 +1,4 @@
-import * as THREE from 'three';
-import IFCLoader from "web-ifc-three/IFCLoader.js";
+import { IFCLoader } from "web-ifc-three/IFCLoader";
 
 const ifcLoader = new IFCLoader();
 ifcLoader.load('example.ifc', function (model) {
